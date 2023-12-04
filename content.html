@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-12 p-5">
+            <div class="position-relative">
+                 <input type="password" class="form-control border-success mt-3" id="password">
+                 <i class="fa-solid fa-eye position-absolute end-0 m-2 top-0" id="eye"></i>
+                 
+            </div>            
+        </div>
+    </div>
+</div>
+
+   <script src="todo.js"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+ 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Changing</title>
+  <style>
+    .color-box {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="color-box" id="colorBox"></div>
+  <input type="text" id="colorInput" placeholder="Enter a color name">
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      const inputColor = document.getElementById('colorInput').value;
+      const colorBox = document.getElementById('colorBox');
+      
+
+      if (isValidColor(inputColor)) {
+        colorBox.style.backgroundColor = inputColor;
+      } else {
+        alert('Invalid color name!');
+      }
+    }
+
+    function isValidColor(color) {
+      const s = new Option().style;
+      s.color = color;
+      return s.color === color;
+    }
+  </script>
+</body>
+</html>

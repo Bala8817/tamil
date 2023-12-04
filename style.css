@@ -1,0 +1,19 @@
+/* .passwordiv{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.7869249394673123) 100%);
+    padding:40px ;
+  }
+  .passwordiv input:focus{
+      outline:0;
+  }
+  .passwordiv input{
+    border-radius: 5px;
+    border: 10px;
+  } */
+  /* input::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+  }  */
+  .forms{
+    background: #22c1c3;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.7869249394673123) 100%);
+  }
